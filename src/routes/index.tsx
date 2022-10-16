@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const Header = styled.header`
   font-weight: 500;
-  color: #333;
+  color: #e4e8fa8c;
   font-size: 1rem;
   line-height: 2rem;
   .icon {
@@ -30,9 +30,10 @@ const Header = styled.header`
   h1 {
     font-size: 2rem;
     font-weight: 800;
+    color: white;
   }
   a {
-    color: #333;
+    color: #e4e8fa8c;
     cursor: pointer;
   }
 `;
@@ -54,7 +55,13 @@ export default function Home() {
             というデジタル士業事務所を開発しています。
           </p>
         </Header>
-        <Main></Main>
+        <Main>
+          <Link href="/about">私について</Link>
+          <Link href="/account">アカウント</Link>
+          <Link href="/experience">経歴</Link>
+          <Link href="/fav">好きなもの</Link>
+          <Link href="/voice">メディアや登壇</Link>
+        </Main>
       </Container>
     </AppLayout>
   );
