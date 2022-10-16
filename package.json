@@ -18,6 +18,7 @@
     "solid-start": "^0.1.0",
     "solid-start-static": "^0.1.0",
     "solid-styled-components": "^0.28.4",
+    "solid-progressbar": "^0.1.1",
     "undici": "^5.10.0"
   },
   "packageManager": "yarn@3.2.2"

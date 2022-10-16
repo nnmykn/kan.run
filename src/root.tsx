@@ -11,6 +11,7 @@ import {
   Link,
   Title,
 } from "solid-start";
+import { SolidNProgress } from "solid-progressbar";
 
 import "./style/global.css";
 
@@ -45,6 +46,7 @@ export default function Root() {
         <ErrorBoundary>
           <Suspense>
             <Routes>
+              <SolidNProgress color="#ff3e3e" />
               <FileRoutes />
             </Routes>
           </Suspense>
