@@ -1,17 +1,19 @@
-import { Head, Title } from "solid-start";
 import { Link } from "@solidjs/router";
 import { styled } from "solid-styled-components";
 import { AppLayout } from "~/layouts/app-layout";
-import { createSignal, onMount, onCleanup } from "solid-js";
-import { createStore } from "solid-js/store";
 
 const Container = styled.div`
   display: block;
   width: 60vw;
-  height: 80vh;
   margin: 0 auto;
   padding-top: 9rem;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  @media screen and (max-width: 800px) {
+    padding-top: 6rem;
+    width: 95vw;
+  }
 `;
 
 const Header = styled.header`
@@ -31,8 +33,11 @@ const Header = styled.header`
   }
   a {
     color: #333;
+    cursor: pointer;
   }
 `;
+
+const Main = styled.main``;
 
 export default function Home() {
   return (
@@ -40,7 +45,7 @@ export default function Home() {
       <Container>
         <Header>
           <Link href="/">
-            <img src="https://github.com/nnmykn.png" class="icon" />
+            <img src="/icon-super-mini.png" class="icon" />
           </Link>
           <h1>二宮 貫(Kan Ninomiya)</h1>
           <p>
@@ -49,6 +54,7 @@ export default function Home() {
             というデジタル士業事務所を開発しています。
           </p>
         </Header>
+        <Main></Main>
       </Container>
     </AppLayout>
   );

@@ -2,7 +2,7 @@ import { Component, JSX } from "solid-js";
 import { styled } from "solid-styled-components";
 
 const Container = styled.div`
-  background-color: #dfeaec;
+  background-color: white;
   min-height: 100vh;
 `;
 
